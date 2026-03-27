@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(245, 158, 11, 0.28), transparent 32%),
+    linear-gradient(180deg, #f8f5ef 0%, #fcfbf8 45%, #ffffff 100%);
+  color: #1f2937;
+}
+
+a {
+  color: inherit;
+}
+
+.shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 72px;
+}
+
+.hero {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: start;
+}
+
+.hero-copy h1 {
+  font-family: "Iowan Old Style", "Georgia", serif;
+  font-size: clamp(40px, 6vw, 74px);
+  line-height: 0.92;
+  margin: 0;
+}
+
+.hero-copy p {
+  max-width: 620px;
+  color: #475569;
+  font-size: 18px;
+}
+
+.hero-card,
+.surface,
+.panel,
+.feed-card,
+.metric {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(203, 213, 225, 0.8);
+  border-radius: 24px;
+  box-shadow: 0 28px 60px rgba(148, 163, 184, 0.12);
+}
+
+.hero-card {
+  padding: 18px;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0 24px;
+}
+
+button,
+.link-button {
+  appearance: none;
+  border: none;
+  border-radius: 999px;
+  background: #1f2937;
+  color: white;
+  padding: 12px 18px;
+  font: inherit;
+  cursor: pointer;
+  transition: transform 120ms ease, opacity 120ms ease;
+}
+
+button:hover,
+.link-button:hover {
+  transform: translateY(-1px);
+}
+
+button.secondary,
+.link-button.secondary {
+  background: #ffffff;
+  color: #1f2937;
+  border: 1px solid #d6d3d1;
+}
+
+.pill-nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.layout {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  margin-top: 24px;
+}
+
+.surface {
+  padding: 20px;
+}
+
+.surface h2,
+.panel h3 {
+  font-family: "Iowan Old Style", "Georgia", serif;
+  margin-top: 0;
+}
+
+.panel {
+  padding: 18px;
+  position: sticky;
+  top: 18px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.metric {
+  padding: 12px;
+}
+
+.metric strong {
+  display: block;
+  font-size: 28px;
+  font-family: "Iowan Old Style", "Georgia", serif;
+}
+
+.grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.feed {
+  display: grid;
+  gap: 12px;
+  max-height: 360px;
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.feed-card {
+  padding: 16px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.form-grid .field-full {
+  grid-column: 1 / -1;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #d4d4d8;
+  border-radius: 14px;
+  padding: 12px 14px;
+  font: inherit;
+  background: white;
+}
+
+.toast-stack,
+.modal-layer,
+.drawer-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.toast-stack {
+  inset: auto 24px 24px auto;
+  display: grid;
+  gap: 10px;
+  z-index: 60;
+}
+
+.toast {
+  pointer-events: auto;
+  background: #111827;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 18px;
+}
+
+.modal-layer[hidden],
+.drawer-layer[hidden] {
+  display: none;
+}
+
+.modal-scrim,
+.drawer-scrim {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.4);
+}
+
+.modal-card {
+  position: relative;
+  width: min(540px, calc(100vw - 32px));
+  margin: 72px auto 0;
+  padding: 24px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 32px 80px rgba(15, 23, 42, 0.28);
+  pointer-events: auto;
+}
+
+.drawer-card {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: min(420px, 100vw);
+  padding: 24px;
+  background: white;
+  box-shadow: -24px 0 80px rgba(15, 23, 42, 0.24);
+  pointer-events: auto;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #92400e;
+}
+
+.tag::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: #d97706;
+}
+
+@media (max-width: 920px) {
+  .hero,
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    position: static;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

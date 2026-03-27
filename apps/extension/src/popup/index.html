@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flow Recorder</title>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <section class="hero">
+        <p class="eyebrow">Flow Recorder</p>
+        <h1>Local harness</h1>
+        <p class="subtle" id="current-url">No active tab</p>
+      </section>
+
+      <section class="status-grid">
+        <div>
+          <span class="label">Status</span>
+          <strong id="status-value">idle</strong>
+        </div>
+        <div>
+          <span class="label">Mode</span>
+          <strong id="mode-value">extension-local</strong>
+        </div>
+        <div>
+          <span class="label">Events</span>
+          <strong id="event-count">0</strong>
+        </div>
+        <div>
+          <span class="label">Session</span>
+          <strong id="session-id">-</strong>
+        </div>
+      </section>
+
+      <section class="controls">
+        <button id="start-btn" class="accent">Start recording</button>
+        <button id="stop-btn">Stop recording</button>
+        <button id="flush-btn">Flush and export</button>
+        <button id="clear-btn">Clear data</button>
+      </section>
+
+      <section class="toggles">
+        <label>
+          <input id="raw-toggle" type="checkbox" />
+          Allow raw text capture
+        </label>
+        <label>
+          <input id="debug-toggle" type="checkbox" />
+          Debug logging
+        </label>
+      </section>
+
+      <section>
+        <h2>Recent events</h2>
+        <ul id="recent-events" class="recent-events"></ul>
+      </section>
+    </main>
+    <script type="module" src="./popup.js"></script>
+  </body>
+</html>

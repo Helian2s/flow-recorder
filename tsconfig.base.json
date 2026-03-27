@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "useDefineForClassFields": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@flow-recorder/schema": ["packages/schema/src/index.ts"],
+      "@flow-recorder/selector-engine": ["packages/selector-engine/src/index.ts"],
+      "@flow-recorder/transport": ["packages/transport/src/index.ts"],
+      "@flow-recorder/recorder-core": ["packages/recorder-core/src/index.ts"],
+      "@flow-recorder/sdk-browser": ["packages/sdk-browser/src/index.ts"],
+      "@flow-recorder/devtools-shared": ["packages/devtools-shared/src/index.ts"]
+    }
+  }
+}

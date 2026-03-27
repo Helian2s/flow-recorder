@@ -1,0 +1,150 @@
+{
+  "exported_at_unix_ms": 1760000301000,
+  "app_id": "demo-spa",
+  "mode": "gtm",
+  "session": {
+    "app_id": "demo-spa",
+    "visitor_id": "visitor_list_1",
+    "session_id": "session_list_1",
+    "pageview_id": "page_list_1",
+    "route_id": "route_list_1",
+    "state_id": "state_list_2",
+    "tab_id": "tab_demo_1",
+    "mode": "gtm",
+    "started_at_unix_ms": 1760000300000,
+    "current_url": "https://demo.local/lists"
+  },
+  "diagnostics": {
+    "dropped_events_count": 0,
+    "redacted_values_count": 0,
+    "queue_overflow_count": 0,
+    "last_transport_error": null,
+    "average_snapshot_size": 488
+  },
+  "snapshots": [],
+  "events": [
+    {
+      "event_id": "evt_list_1",
+      "event_type": "network.request.start",
+      "category": "system",
+      "session_id": "session_list_1",
+      "visitor_id": "visitor_list_1",
+      "pageview_id": "page_list_1",
+      "tab_id": "tab_demo_1",
+      "route_id": "route_list_1",
+      "state_id": "state_list_1",
+      "ts_unix_ms": 1760000300200,
+      "ts_perf_ms": 22,
+      "sequence_no": 1,
+      "mode": "gtm",
+      "url": "https://demo.local/lists",
+      "url_path": "/lists",
+      "url_hash": "",
+      "title": "Flow Recorder Demo SPA",
+      "referrer": null,
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "scroll_x": 0,
+        "scroll_y": 0,
+        "dpr": 1
+      },
+      "document_ready_state": "complete",
+      "visibility_state": "visible",
+      "action_kind": null,
+      "target": null,
+      "selectors": [],
+      "visible_context": null,
+      "replay_hints": null,
+      "captured_value": null,
+      "redaction": null,
+      "network": {
+        "request_id": "req_list_1",
+        "method": "GET",
+        "sanitized_url": "data:application/json,%5B...%5D",
+        "started_at_unix_ms": 1760000300200,
+        "result": "pending"
+      },
+      "snapshot_ref": null,
+      "state_id_after": null,
+      "nearest_form": null,
+      "nearest_landmark": null,
+      "nearest_heading": null,
+      "nearest_label_text": null,
+      "dominant_container_signature": null,
+      "route_template_guess": "/lists",
+      "notes": [],
+      "metadata": {}
+    },
+    {
+      "event_id": "evt_list_2",
+      "event_type": "state.settled",
+      "category": "system",
+      "session_id": "session_list_1",
+      "visitor_id": "visitor_list_1",
+      "pageview_id": "page_list_1",
+      "tab_id": "tab_demo_1",
+      "route_id": "route_list_1",
+      "state_id": "state_list_1",
+      "ts_unix_ms": 1760000300800,
+      "ts_perf_ms": 244,
+      "sequence_no": 2,
+      "mode": "gtm",
+      "url": "https://demo.local/lists",
+      "url_path": "/lists",
+      "url_hash": "",
+      "title": "Flow Recorder Demo SPA",
+      "referrer": null,
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "scroll_x": 0,
+        "scroll_y": 0,
+        "dpr": 1
+      },
+      "document_ready_state": "complete",
+      "visibility_state": "visible",
+      "action_kind": null,
+      "target": null,
+      "selectors": [],
+      "visible_context": {
+        "captured_at_unix_ms": 1760000300800,
+        "items": [],
+        "active_dialogs": [],
+        "active_drawers": [],
+        "top_headings": ["Virtualized-ish feed with scroll container context"],
+        "focused_dom_ref": null,
+        "landmark_stack": ["main"]
+      },
+      "replay_hints": {
+        "suggested_waits": [
+          {
+            "type": "network-idle",
+            "ms": 300
+          },
+          {
+            "type": "dom-quiet",
+            "ms": 400
+          }
+        ],
+        "target_settled_state_id": "state_list_2",
+        "likely_view_key": "feed_container_list_1"
+      },
+      "captured_value": null,
+      "redaction": null,
+      "network": null,
+      "snapshot_ref": null,
+      "state_id_after": "state_list_2",
+      "nearest_form": null,
+      "nearest_landmark": null,
+      "nearest_heading": null,
+      "nearest_label_text": null,
+      "dominant_container_signature": "container_list_1",
+      "route_template_guess": "/lists",
+      "notes": [],
+      "metadata": {
+        "settle_reason": "quiet-window"
+      }
+    }
+  ]
+}

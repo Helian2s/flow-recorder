@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flow Recorder Options</title>
+    <style>
+      body {
+        font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+        margin: 24px;
+        max-width: 680px;
+        line-height: 1.5;
+      }
+
+      h1 {
+        font-family: "IBM Plex Serif", Georgia, serif;
+      }
+
+      label {
+        display: block;
+        margin: 12px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Flow Recorder options</h1>
+      <p>These settings only affect extension-local recording in your own browser.</p>
+      <label>
+        <input id="raw-input-capture" type="checkbox" />
+        Allow raw text input capture
+      </label>
+      <label>
+        <input id="debug" type="checkbox" />
+        Enable debug logging
+      </label>
+      <p id="saved-state"></p>
+    </main>
+    <script type="module" src="./options.js"></script>
+  </body>
+</html>

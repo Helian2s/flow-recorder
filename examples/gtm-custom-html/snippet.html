@@ -1,0 +1,17 @@
+<script src="https://static.example.com/flow-recorder.iife.js"></script>
+<script>
+  (function () {
+    window.FlowRecorder.init({
+      endpoint: "",
+      appId: "demo-app",
+      mode: "gtm",
+      autoStart: true,
+      debug: true,
+      capture: {
+        visibilityContext: true,
+        snapshots: "balanced",
+        network: true
+      }
+    });
+  })();
+</script>

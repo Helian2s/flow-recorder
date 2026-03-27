@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Flow Recorder Local Harness",
+  "version": "0.1.0",
+  "description": "Inject the shared flow recorder into the active tab for local testing.",
+  "permissions": ["activeTab", "scripting", "storage", "tabs"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Flow Recorder",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["page-bridge.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

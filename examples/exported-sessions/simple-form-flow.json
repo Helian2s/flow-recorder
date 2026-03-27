@@ -1,0 +1,199 @@
+{
+  "exported_at_unix_ms": 1760000001000,
+  "app_id": "demo-spa",
+  "mode": "gtm",
+  "session": {
+    "app_id": "demo-spa",
+    "visitor_id": "visitor_form_1",
+    "session_id": "session_form_1",
+    "pageview_id": "page_form_1",
+    "route_id": "route_form_1",
+    "state_id": "state_form_2",
+    "tab_id": "tab_demo_1",
+    "mode": "gtm",
+    "started_at_unix_ms": 1760000000000,
+    "current_url": "https://demo.local/forms"
+  },
+  "diagnostics": {
+    "dropped_events_count": 0,
+    "redacted_values_count": 2,
+    "queue_overflow_count": 0,
+    "last_transport_error": null,
+    "average_snapshot_size": 612
+  },
+  "snapshots": [
+    {
+      "snapshot_id": "snapshot_form_1",
+      "state_id": "state_form_2",
+      "created_at_unix_ms": 1760000000900,
+      "level": "balanced",
+      "dom_signature": "h_form_1",
+      "route_template_guess": "/forms",
+      "dominant_container_signature": "container_form_1",
+      "top_heading": "Mask-by-default inputs with explicit submit flow",
+      "active_landmarks": ["main"],
+      "modal_identity": null,
+      "form_identity": "dom_form_1",
+      "visible_context": {
+        "captured_at_unix_ms": 1760000000900,
+        "items": [],
+        "active_dialogs": [],
+        "active_drawers": [],
+        "top_headings": ["Mask-by-default inputs with explicit submit flow"],
+        "focused_dom_ref": null,
+        "landmark_stack": ["main"]
+      },
+      "fragments": []
+    }
+  ],
+  "events": [
+    {
+      "event_id": "evt_form_1",
+      "event_type": "route.change",
+      "category": "navigation",
+      "session_id": "session_form_1",
+      "visitor_id": "visitor_form_1",
+      "pageview_id": "page_form_1",
+      "tab_id": "tab_demo_1",
+      "route_id": "route_form_1",
+      "state_id": null,
+      "ts_unix_ms": 1760000000100,
+      "ts_perf_ms": 12,
+      "sequence_no": 1,
+      "mode": "gtm",
+      "url": "https://demo.local/forms",
+      "url_path": "/forms",
+      "url_hash": "",
+      "title": "Flow Recorder Demo SPA",
+      "referrer": null,
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "scroll_x": 0,
+        "scroll_y": 0,
+        "dpr": 1
+      },
+      "document_ready_state": "complete",
+      "visibility_state": "visible",
+      "action_kind": null,
+      "target": null,
+      "selectors": [],
+      "visible_context": null,
+      "replay_hints": null,
+      "captured_value": null,
+      "redaction": null,
+      "network": null,
+      "snapshot_ref": null,
+      "state_id_after": null,
+      "nearest_form": null,
+      "nearest_landmark": null,
+      "nearest_heading": null,
+      "nearest_label_text": null,
+      "dominant_container_signature": null,
+      "route_template_guess": "/forms",
+      "notes": [],
+      "metadata": {
+        "url": "https://demo.local/forms"
+      }
+    },
+    {
+      "event_id": "evt_form_2",
+      "event_type": "submit",
+      "category": "user",
+      "session_id": "session_form_1",
+      "visitor_id": "visitor_form_1",
+      "pageview_id": "page_form_1",
+      "tab_id": "tab_demo_1",
+      "route_id": "route_form_1",
+      "state_id": "state_form_1",
+      "ts_unix_ms": 1760000000500,
+      "ts_perf_ms": 144,
+      "sequence_no": 2,
+      "mode": "gtm",
+      "url": "https://demo.local/forms",
+      "url_path": "/forms",
+      "url_hash": "",
+      "title": "Flow Recorder Demo SPA",
+      "referrer": null,
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "scroll_x": 0,
+        "scroll_y": 0,
+        "dpr": 1
+      },
+      "document_ready_state": "complete",
+      "visibility_state": "visible",
+      "action_kind": "action.submit",
+      "target": {
+        "tag_name": "form",
+        "node_name": "FORM"
+      },
+      "selectors": [
+        {
+          "strategy": "css",
+          "value": "form:nth-of-type(1)",
+          "confidence": 0.53,
+          "stable": false,
+          "rationale": "bounded CSS ancestry fallback"
+        }
+      ],
+      "visible_context": {
+        "captured_at_unix_ms": 1760000000500,
+        "items": [],
+        "active_dialogs": [],
+        "active_drawers": [],
+        "top_headings": ["Mask-by-default inputs with explicit submit flow"],
+        "focused_dom_ref": "dom_email_1",
+        "landmark_stack": ["main"]
+      },
+      "replay_hints": {
+        "suggested_waits": [
+          {
+            "type": "dom-quiet",
+            "ms": 400
+          },
+          {
+            "type": "network-idle",
+            "ms": 300
+          }
+        ],
+        "target_settled_state_id": "state_form_2",
+        "likely_view_key": "h_form_1",
+        "inside_modal": false,
+        "inside_drawer": false,
+        "required_scroll": false,
+        "same_origin_iframe": false,
+        "open_shadow_root": false
+      },
+      "captured_value": null,
+      "redaction": null,
+      "network": null,
+      "snapshot_ref": {
+        "snapshot_id": "snapshot_form_1",
+        "state_id": "state_form_2"
+      },
+      "state_id_after": "state_form_2",
+      "nearest_form": {
+        "kind": "form",
+        "dom_ref": "dom_form_1",
+        "label": null,
+        "text_snippet": "Work email Team size Password Notes Subscribe to updates Submit form Trigger validation state"
+      },
+      "nearest_landmark": {
+        "kind": "landmark",
+        "dom_ref": "dom_main_1",
+        "label": null,
+        "text_snippet": "Forms route Mask-by-default inputs with explicit submit flow"
+      },
+      "nearest_heading": "Mask-by-default inputs with explicit submit flow",
+      "nearest_label_text": null,
+      "dominant_container_signature": "container_form_1",
+      "route_template_guess": "/forms",
+      "notes": [],
+      "metadata": {
+        "submitter_tag": "button"
+      }
+    }
+  ]
+}

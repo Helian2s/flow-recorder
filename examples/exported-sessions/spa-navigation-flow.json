@@ -1,0 +1,133 @@
+{
+  "exported_at_unix_ms": 1760000201000,
+  "app_id": "demo-spa",
+  "mode": "gtm",
+  "session": {
+    "app_id": "demo-spa",
+    "visitor_id": "visitor_spa_1",
+    "session_id": "session_spa_1",
+    "pageview_id": "page_spa_2",
+    "route_id": "route_forms_1",
+    "state_id": "state_spa_2",
+    "tab_id": "tab_demo_1",
+    "mode": "gtm",
+    "started_at_unix_ms": 1760000200000,
+    "current_url": "https://demo.local/forms"
+  },
+  "diagnostics": {
+    "dropped_events_count": 0,
+    "redacted_values_count": 0,
+    "queue_overflow_count": 0,
+    "last_transport_error": null,
+    "average_snapshot_size": 400
+  },
+  "snapshots": [],
+  "events": [
+    {
+      "event_id": "evt_spa_1",
+      "event_type": "history.pushState",
+      "category": "navigation",
+      "session_id": "session_spa_1",
+      "visitor_id": "visitor_spa_1",
+      "pageview_id": "page_spa_1",
+      "tab_id": "tab_demo_1",
+      "route_id": "route_home_1",
+      "state_id": "state_spa_1",
+      "ts_unix_ms": 1760000200300,
+      "ts_perf_ms": 31,
+      "sequence_no": 1,
+      "mode": "gtm",
+      "url": "https://demo.local/forms",
+      "url_path": "/forms",
+      "url_hash": "",
+      "title": "Flow Recorder Demo SPA",
+      "referrer": null,
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "scroll_x": 0,
+        "scroll_y": 0,
+        "dpr": 1
+      },
+      "document_ready_state": "complete",
+      "visibility_state": "visible",
+      "action_kind": null,
+      "target": null,
+      "selectors": [],
+      "visible_context": null,
+      "replay_hints": null,
+      "captured_value": null,
+      "redaction": null,
+      "network": null,
+      "snapshot_ref": null,
+      "state_id_after": null,
+      "nearest_form": null,
+      "nearest_landmark": null,
+      "nearest_heading": null,
+      "nearest_label_text": null,
+      "dominant_container_signature": null,
+      "route_template_guess": "/forms",
+      "notes": [],
+      "metadata": {
+        "url": "https://demo.local/forms"
+      }
+    },
+    {
+      "event_id": "evt_spa_2",
+      "event_type": "route.change",
+      "category": "navigation",
+      "session_id": "session_spa_1",
+      "visitor_id": "visitor_spa_1",
+      "pageview_id": "page_spa_2",
+      "tab_id": "tab_demo_1",
+      "route_id": "route_forms_1",
+      "state_id": null,
+      "ts_unix_ms": 1760000200310,
+      "ts_perf_ms": 33,
+      "sequence_no": 2,
+      "mode": "gtm",
+      "url": "https://demo.local/forms",
+      "url_path": "/forms",
+      "url_hash": "",
+      "title": "Flow Recorder Demo SPA",
+      "referrer": null,
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "scroll_x": 0,
+        "scroll_y": 0,
+        "dpr": 1
+      },
+      "document_ready_state": "complete",
+      "visibility_state": "visible",
+      "action_kind": null,
+      "target": null,
+      "selectors": [],
+      "visible_context": null,
+      "replay_hints": {
+        "suggested_waits": [
+          {
+            "type": "route-change"
+          }
+        ],
+        "target_settled_state_id": "state_spa_2",
+        "likely_view_key": "/forms"
+      },
+      "captured_value": null,
+      "redaction": null,
+      "network": null,
+      "snapshot_ref": null,
+      "state_id_after": "state_spa_2",
+      "nearest_form": null,
+      "nearest_landmark": null,
+      "nearest_heading": null,
+      "nearest_label_text": null,
+      "dominant_container_signature": null,
+      "route_template_guess": "/forms",
+      "notes": [],
+      "metadata": {
+        "url": "https://demo.local/forms"
+      }
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "exported_at_unix_ms": 1760000101000,
+  "app_id": "demo-spa",
+  "mode": "extension-local",
+  "session": {
+    "app_id": "demo-spa",
+    "visitor_id": "visitor_modal_1",
+    "session_id": "session_modal_1",
+    "pageview_id": "page_modal_1",
+    "route_id": "route_home_1",
+    "state_id": "state_modal_2",
+    "tab_id": "tab_demo_1",
+    "mode": "extension-local",
+    "started_at_unix_ms": 1760000100000,
+    "current_url": "https://demo.local/home"
+  },
+  "diagnostics": {
+    "dropped_events_count": 0,
+    "redacted_values_count": 0,
+    "queue_overflow_count": 0,
+    "last_transport_error": null,
+    "average_snapshot_size": 544
+  },
+  "snapshots": [],
+  "events": [
+    {
+      "event_id": "evt_modal_1",
+      "event_type": "click",
+      "category": "user",
+      "session_id": "session_modal_1",
+      "visitor_id": "visitor_modal_1",
+      "pageview_id": "page_modal_1",
+      "tab_id": "tab_demo_1",
+      "route_id": "route_home_1",
+      "state_id": "state_modal_1",
+      "ts_unix_ms": 1760000100200,
+      "ts_perf_ms": 25,
+      "sequence_no": 1,
+      "mode": "extension-local",
+      "url": "https://demo.local/home",
+      "url_path": "/home",
+      "url_hash": "",
+      "title": "Flow Recorder Demo SPA",
+      "referrer": null,
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "scroll_x": 0,
+        "scroll_y": 0,
+        "dpr": 1
+      },
+      "document_ready_state": "complete",
+      "visibility_state": "visible",
+      "action_kind": "action.click",
+      "target": {
+        "tag_name": "button",
+        "node_name": "BUTTON",
+        "accessible_name": "Open modal",
+        "text_snippet": "Open modal"
+      },
+      "selectors": [
+        {
+          "strategy": "text",
+          "value": "Open modal",
+          "confidence": 0.64,
+          "stable": false,
+          "rationale": "visible text content"
+        }
+      ],
+      "visible_context": {
+        "captured_at_unix_ms": 1760000100200,
+        "items": [],
+        "active_dialogs": [],
+        "active_drawers": [],
+        "top_headings": ["Dynamic flows with async state, overlays, and real route changes."],
+        "focused_dom_ref": null,
+        "landmark_stack": ["main"]
+      },
+      "replay_hints": {
+        "suggested_waits": [
+          {
+            "type": "dom-quiet",
+            "ms": 400
+          }
+        ],
+        "target_settled_state_id": "state_modal_2",
+        "likely_view_key": "modal_upgrade_prompt",
+        "inside_modal": false,
+        "inside_drawer": false,
+        "required_scroll": false,
+        "same_origin_iframe": false,
+        "open_shadow_root": false
+      },
+      "captured_value": null,
+      "redaction": null,
+      "network": null,
+      "snapshot_ref": null,
+      "state_id_after": "state_modal_2",
+      "nearest_form": null,
+      "nearest_landmark": {
+        "kind": "landmark",
+        "dom_ref": "dom_main_1",
+        "label": null,
+        "text_snippet": "Dynamic flows with async state, overlays, and real route changes."
+      },
+      "nearest_heading": "Dynamic flows with async state, overlays, and real route changes.",
+      "nearest_label_text": null,
+      "dominant_container_signature": "container_home_1",
+      "route_template_guess": "/home",
+      "notes": [],
+      "metadata": {
+        "client_x": 240,
+        "client_y": 380,
+        "button": 0
+      }
+    }
+  ]
+}
